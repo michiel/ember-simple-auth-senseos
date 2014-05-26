@@ -1,0 +1,10 @@
+var senseos = requireModule('ember-simple-auth-senseos');
+
+global.Ember.SimpleAuth.Authenticators.SenseOS = senseos.Authenticator;
+global.Ember.SimpleAuth.Authorizers.SenseOS    = senseos.Authorizer;
+
+global.Ember.SimpleAuth.initializeExtension(function(container, application, options) {
+  container.register('ember-simple-auth-authorizer:senseos', global.Ember.SimpleAuth.Authorizers.SenseOS);
+  container.register('ember-simple-auth-authenticator:senseos', global.Ember.SimpleAuth.Authenticators.SenseOS);
+});
+})((typeof global !== 'undefined') ? global : window);
