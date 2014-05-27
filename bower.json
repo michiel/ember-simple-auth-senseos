@@ -1,0 +1,10 @@
+{
+  "name": "ember-simple-auth-senseos",
+  "version": "0.1.0",
+  "dependencies": {
+    "js-md5": "~1.1.0"
+  },
+  "devDependencies": {
+    "ember-simple-auth": "https://github.com/simplabs/ember-simple-auth-component.git"
+  }
+}
